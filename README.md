@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.png" alt="Kuma Agent" width="100%">
+</p>
+
 # Kuma Agent
 
 **Kuma Agent is a privacy-first AI agent runtime forked from [Hermes Agent](https://github.com/NousResearch/hermes-agent) by [Nous Research](https://nousresearch.com).**

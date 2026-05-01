@@ -14,9 +14,11 @@ Forked from `NousResearch/hermes-agent` at upstream commit `e5dad4ac` (2026-04-3
 - **`./kuma`** repo-root launcher mirroring `./hermes` (mode 100755).
 - **`kuma_cli`** Python package alias. `from kuma_cli.main import main` resolves to the same code as `from hermes_cli.main import main` via the standard `sys.modules` swap pattern. No existing imports are affected.
 - **`CHANGELOG.md`** — this file.
+- **`assets/favicon.svg`** + **`assets/favicon.ico`** — Kuma cyber-bear icons (cyan on black, matching the brand palette).
 
 ### Changed
-- **`README.md`** — rewritten with Kuma identity, honest "Day-1 status" disclosure that the CLI command, Python module names, and documentation URLs still use `hermes`. Links upstream Hermes docs as authoritative until Kuma has its own docs site.
+- **`README.md`** — rewritten with Kuma identity, honest "Day-1 status" disclosure that the CLI command, Python module names, and documentation URLs still use `hermes`. Links upstream Hermes docs as authoritative until Kuma has its own docs site. Banner image at the top now shows the Kuma cyber-bear instead of the original Hermes graphic.
+- **`assets/banner.png`** — replaced the inherited Hermes banner with the Kuma cyber-bear (1200×630, cyan on black, sourced from the Kuma landing-page OG image).
 - **`LICENSE`** — appended `Copyright (c) 2026 ZeroSec AI (Kuma Agent additions)` alongside the original `Copyright (c) 2025 Nous Research`. Both copyrights preserved; license text unchanged (MIT).
 - **`SECURITY.md`** — title and intro retitled; vulnerability reporting routes Kuma-specific issues to `zerosecai` GHSA / `sam@zerosec-ai.com`, upstream-runtime issues stay with Nous (with a CC ask). All technical content (trust model, sandbox, redaction, subagent isolation) is upstream-equivalent and untouched.
 - **`AGENTS.md`** — title + a Day-1 note pointing dev-tool readers at `ATTRIBUTION.md` for the path-rename plan. The 762-line dev guide body is upstream-equivalent and untouched.
@@ -31,7 +33,6 @@ Forked from `NousResearch/hermes-agent` at upstream commit `e5dad4ac` (2026-04-3
 - **`RELEASE_v*.md`** (11 files, ~360KB) — historical Hermes release notes. Left as artifact; rewriting would be revisionist.
 - **`hermes-already-has-routines.md`** — upstream marketing artifact, left untouched.
 - **CI workflows** (`.github/workflows/`) — unchanged. Rebranding the runtime here without first verifying no test references break would be unsafe.
-- **Banner asset** (`assets/banner.png`) — original Hermes banner. Awaiting a Kuma cyber-bear PNG.
 - **Skill packs, hybrid LLM routing, multi-agent pipeline, telemetry-off defaults, Kuma cyan/black palette** — these are the substantive Kuma additions and are scheduled for incremental work over weeks 2-7. None are shipped yet.
 
 ### Inherited
