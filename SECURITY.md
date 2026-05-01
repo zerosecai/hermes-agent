@@ -80,7 +80,17 @@ The following scenarios are **not** considered security breaches:
 
 ---
 
-## 5. Disclosure Process
+## 5. Privacy Posture
+
+Kuma Agent ships no third-party analytics, no phone-home telemetry, and no code that exfiltrates user data to ZeroSec AI, Nous Research, or any other party. Every identifier named `telemetry` in this codebase refers to local operational tracking that never leaves the machine.
+
+Full statement and verification commands: [PRIVACY.md](PRIVACY.md).
+
+Contributor rule: any future code that sends data to a third-party service must be opt-in by default. Default-on telemetry PRs will be rejected.
+
+---
+
+## 6. Disclosure Process
 
 - **Coordinated Disclosure:** 90-day window or until a fix is released, whichever comes first.
 - **Communication:** All updates occur via the GHSA thread or email correspondence with security@nousresearch.com.

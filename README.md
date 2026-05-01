@@ -58,7 +58,7 @@ Planned divergence from upstream — *not yet shipped*:
 - **Skill packs** — chunk-based, auto-indexed packs (~1GB each). Initial pack: `kuma-pack-tsreact` (TypeScript + React + Vite).
 - **Hybrid LLM routing** — local-first with cloud burst (Ollama Cloud, Local Ollama, LM Studio).
 - **Multi-agent pipeline** — Planner → Coder → Reviewer, scalable to 10 parallel coders.
-- **Privacy-first defaults** — telemetry off by default, transparent.
+- **Privacy-first defaults** — no third-party analytics, no phone-home. Verifiable: see [PRIVACY.md](PRIVACY.md).
 - **Brand** — Kuma cyber-bear, Cyan/Black palette.
 
 Where these make sense upstream, contributions flow back to Hermes.
