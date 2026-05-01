@@ -1,6 +1,6 @@
 # Changelog
 
-All notable Kuma-specific changes are documented here. Upstream Hermes Agent changes are tracked separately in `RELEASE_v*.md` (historical) and at [NousResearch/hermes-agent/releases](https://github.com/NousResearch/hermes-agent/releases) (ongoing).
+All notable Kuma-specific changes are documented here. Upstream Hermes Agent changes are tracked separately in [`docs/upstream-releases/`](docs/upstream-releases/) (historical, v0.2.0–v0.12.0) and at [NousResearch/hermes-agent/releases](https://github.com/NousResearch/hermes-agent/releases) (ongoing).
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) once Kuma cuts its own release tags. Until then, individual rebrand commits land on `main` and are summarised below.
 
@@ -31,7 +31,7 @@ Forked from `NousResearch/hermes-agent` at upstream commit `e5dad4ac` (2026-04-3
 - **Source dirs / files** — `hermes_cli/`, `hermes_state.py`, `hermes_constants.py`, `hermes_logging.py`, `hermes_time.py` etc. remain canonical. Renaming would require shimming ~960 imports and a full pytest sweep. Will land in a later batch once shims and a CI gate are in place.
 - **`~/.hermes/` user config dir** — unchanged. Renaming would orphan every existing install's settings, sessions DB, and skill installs.
 - **`website/`** — Docusaurus site is upstream-equivalent. Will diverge once Kuma has its own docs deployment target.
-- **`RELEASE_v*.md`** (11 files, ~360KB) — historical Hermes release notes. Left as artifact; rewriting would be revisionist.
+- **`docs/upstream-releases/RELEASE_v*.md`** (11 files, ~360KB) — historical Hermes release notes, moved out of repo root for cleanliness in Batch 7. Content untouched; rewriting would be revisionist.
 - **`hermes-already-has-routines.md`** — upstream marketing artifact, left untouched.
 - **CI workflows** (`.github/workflows/`) — unchanged. Rebranding the runtime here without first verifying no test references break would be unsafe.
 - **Skill packs, hybrid LLM routing, multi-agent pipeline, telemetry-off defaults, Kuma cyan/black palette** — these are the substantive Kuma additions and are scheduled for incremental work over weeks 2-7. None are shipped yet.
