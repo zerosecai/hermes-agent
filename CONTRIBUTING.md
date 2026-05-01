@@ -1,6 +1,12 @@
-# Contributing to Hermes Agent
+# Contributing to Kuma Agent
 
-Thank you for contributing to Hermes Agent! This guide covers everything you need: setting up your dev environment, understanding the architecture, deciding what to build, and getting your PR merged.
+Thank you for contributing to Kuma Agent! This guide is inherited from upstream Hermes Agent and covers everything you need: setting up your dev environment, understanding the architecture, deciding what to build, and getting your PR merged.
+
+> **Where to send PRs.**
+> - **Agent-runtime improvements** (bug fixes, tool/gateway/memory/skills work that benefits both projects) — file upstream first at [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent). Kuma will pick up the change on the next sync.
+> - **Kuma-specific work** (skill packs, hybrid LLM routing, multi-agent pipeline, branding, the `zerosecai/hermes-agent` distribution) — file here.
+>
+> When in doubt, open it here and we'll redirect.
 
 ---
 

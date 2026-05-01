@@ -1,6 +1,8 @@
-# Hermes Agent - Development Guide
+# Kuma Agent — Development Guide
 
-Instructions for AI coding assistants and developers working on the hermes-agent codebase.
+Instructions for AI coding assistants and developers working on the Kuma Agent codebase (forked from Hermes Agent).
+
+> **Day-1 rebrand note.** Kuma inherits the Hermes Agent runtime unchanged. Code paths, module names, and the user config directory still use the `hermes` prefix (`hermes_cli/`, `hermes_state.py`, `~/.hermes/`, etc.). The path-rename plan is documented in [ATTRIBUTION.md](ATTRIBUTION.md). Everything else in this guide applies as-is.
 
 ## Development Environment
 

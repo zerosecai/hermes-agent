@@ -1,10 +1,13 @@
-# Hermes Agent Security Policy
+# Kuma Agent Security Policy
 
-This document outlines the security protocols, trust model, and deployment hardening guidelines for the **Hermes Agent** project.
+This document outlines the security protocols, trust model, and deployment hardening guidelines for **Kuma Agent**, inherited from upstream **Hermes Agent**. At the Day-1 rebrand stage the runtime is unchanged, so every behavior and code path described below applies identically to both projects.
 
 ## 1. Vulnerability Reporting
 
-Hermes Agent does **not** operate a bug bounty program. Security issues should be reported via [GitHub Security Advisories (GHSA)](https://github.com/NousResearch/hermes-agent/security/advisories/new) or by emailing **security@nousresearch.com**. Do not open public issues for security vulnerabilities.
+Neither Kuma Agent nor upstream Hermes Agent operates a bug bounty program. Do not open public issues for security vulnerabilities.
+
+- **Kuma-specific issues** (rebrand surface, Kuma additions, the `zerosecai/hermes-agent` distribution): report via [Kuma GitHub Security Advisories](https://github.com/zerosecai/hermes-agent/security/advisories/new) or email **sam@zerosec-ai.com**.
+- **Upstream runtime issues** (the agent loop, tools, gateway, memory, skills system — anything Kuma inherits unchanged): you may report directly upstream via [Hermes GHSA](https://github.com/NousResearch/hermes-agent/security/advisories/new) or email **security@nousresearch.com**. Please CC us so we can track downstream impact.
 
 ### Required Submission Details
 - **Title & Severity:** Concise description and CVSS score/rating.
