@@ -1,5 +1,5 @@
 name: "🔧 Setup / Installation Help"
-description: Having trouble installing or configuring Hermes? Ask here.
+description: Having trouble installing or configuring Kuma Agent? Ask here.
 title: "[Setup]: "
 labels: ["setup"]
 body:
@@ -12,7 +12,7 @@ body:
         - Run `hermes debug share` and paste the links in the Debug Report section below
         - If you're in a chat session, you can use `/debug` instead — it does the same thing
         - Try `hermes update` to get the latest version
-        - Check the [README troubleshooting section](https://github.com/NousResearch/hermes-agent#troubleshooting)
+        - Check the [upstream Hermes docs](https://hermes-agent.nousresearch.com/docs/) — the runtime is the same, so troubleshooting applies
         - For general questions, consider the [Nous Research Discord](https://discord.gg/NousResearch) for faster help
 
   - type: textarea
@@ -68,11 +68,11 @@ body:
       placeholder: "3.11.9"
 
   - type: input
-    id: hermes-version
+    id: agent-version
     attributes:
-      label: Hermes Version
-      description: Output of `hermes version` (if install got that far)
-      placeholder: "2.1.0"
+      label: Agent Version
+      description: Output of `hermes version` or `kuma version` (if install got that far)
+      placeholder: "0.12.0"
 
   - type: textarea
     id: debug-report

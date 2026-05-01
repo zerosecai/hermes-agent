@@ -8,8 +8,9 @@ body:
       value: |
         Thanks for the suggestion! Before submitting, please consider:
 
-        - **Is this a new skill?** Most capabilities should be [skills, not tools](https://github.com/NousResearch/hermes-agent/blob/main/CONTRIBUTING.md#should-it-be-a-skill-or-a-tool). If it's a specialized integration (crypto, NFT, niche SaaS), it belongs on the Skills Hub, not bundled.
-        - **Search [existing issues](https://github.com/NousResearch/hermes-agent/issues)** — someone may have already proposed this.
+        - **Is this a new skill?** Most capabilities should be [skills, not tools](https://github.com/zerosecai/hermes-agent/blob/main/CONTRIBUTING.md#should-it-be-a-skill-or-a-tool). If it's a specialized integration (crypto, NFT, niche SaaS), it belongs on the Skills Hub, not bundled.
+        - **Search [existing issues](https://github.com/zerosecai/hermes-agent/issues)** — someone may have already proposed this.
+        - **Is this Kuma-specific or a runtime improvement?** Runtime work (tool/gateway/memory/skills core) often belongs upstream at [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) first; Kuma additions (skill packs, hybrid LLM routing, multi-agent pipeline, branding) belong here.
 
   - type: textarea
     id: problem
@@ -17,7 +18,7 @@ body:
       label: Problem or Use Case
       description: What problem does this solve? What are you trying to do that you can't today?
       placeholder: |
-        I'm trying to use Hermes with [provider/platform/workflow] but currently
+        I'm trying to use Kuma with [provider/platform/workflow] but currently
         there's no way to...
     validations:
       required: true
